@@ -72,4 +72,15 @@ dependencies {
     //extras
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
+
+    implementation(libs.room.ktx)
+    ksp(libs.room.compiler)
+
+    implementation(libs.navigation.compose)
+
+    implementation(project(":domain"))
+    implementation(project(":data"))
+    implementation(project(":common"))
+    implementation(project(":mediaplayer"))
+    implementation(project(":features"))
 }
